@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Is employee:</strong>
+  <%= @user.is_employee %>
+</p>
+
+<p>
+  <strong>Is affiliate:</strong>
+  <%= @user.is_affiliate %>
+</p>
+
+<p>
+  <strong>Registered on:</strong>
+  <%= @user.registered_on %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @user.name %>
+</p>
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>
